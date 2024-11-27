@@ -35,7 +35,6 @@ class ViewController: UIViewController {
 
     func presentSheetViewController() {
         let viewControllerToPresent = SheetViewController()
-        
         present(viewControllerToPresent, animated: true)
     }
 
