@@ -35,14 +35,6 @@ class ViewController: UIViewController {
 
     func presentSheetViewController() {
         let viewControllerToPresent = SheetViewController()
-        
-        if let sheet = viewControllerToPresent.sheetPresentationController {
-            sheet.detents = [.medium(), .large()]
-            sheet.selectedDetentIdentifier = .medium
-            sheet.prefersGrabberVisible = true
-            sheet.preferredCornerRadius = 20
-        }
-        
         present(viewControllerToPresent, animated: true)
     }
 
